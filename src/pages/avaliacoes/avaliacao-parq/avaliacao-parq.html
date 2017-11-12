@@ -1,0 +1,91 @@
+<!--
+  Generated template for the AvaliacaoParqPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  
+    <ion-navbar>
+      <ion-title>avaliacaoPARQ</ion-title>
+    </ion-navbar>
+  
+</ion-header>
+  
+  
+  <ion-content>
+  
+    <div class="container" style="padding-right: 2%;padding-left: 2%">
+      <!-- conteudo da pagina -->
+      <div class="container">
+          <div class="col-md-7" style="margin-top:20px;margin-bottom:20px;">
+                         
+                      <div id="titulo" text-justify> 1 - Alguma vez um médico lhe disse que você possui um problema do coração e recomendou que só fizesse atividade física sob supervisão médica? </div>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao1" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
+                          
+                          
+                      <div id="titulo"text-justify> 2 - Você sente dor no peito causada pela prática de atividade física? </div>
+                          
+                        <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao2" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
+
+                      <div id="titulo" text-justify> 3 - Você sentiu dor no peito no ultimo mês ? </div>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao3" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
+                      <div id="titulo" text-justify> 4 - Você tende a perde a consciência ou cair, como resultado de tonteira? </div>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao4" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
+                      <div id="titulo" text-justify> 5 - Você tem algum problema ósseo ou muscular que poderia ser agravado com a prática de atividade física? </div>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao5" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
+                      <div id="titulo" text-justify> 6 - Algum médico já recomendou o uso de medicamento para a sua pressão arterail ou condição física? </div>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao6" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
+                      <div id="titulo" text-justify> 7 - Você tem consciência, através da sua própria experiência ou aconselhamento médico, de alguma outra razão física que impeça sua prática de atividade física sem supervisão médica? </div>
+                      <ion-item>
+                            <ion-label>R:</ion-label>
+                            <ion-select [(ngModel)]="parq.opcao7" interface="popover">
+                                <ion-option value="sim">Sim</ion-option>
+                                <ion-option value="nao">Não</ion-option>
+                            </ion-select>
+                        </ion-item>
+                        <ion-item>
+                        <button ion-button (click)="calcula_parq()">Calcular</button>
+                        </ion-item>
+                          
+            </div>
+        </div>
+    </div>
+      
+  </ion-content>
